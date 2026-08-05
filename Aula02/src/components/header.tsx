@@ -2,12 +2,13 @@ import { StyleSheet, Text, View } from 'react-native';
 
 import { Colors, Spacing } from '@/constants/theme';
 
+// PROPS - propriedades que o componente recebe
 interface HeaderProps {
   title: string;
   subtitle?: string;
 }
 
-export function Header({ title, subtitle }: HeaderProps) {
+export function Header({title, subtitle}: HeaderProps) {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>{title}</Text>

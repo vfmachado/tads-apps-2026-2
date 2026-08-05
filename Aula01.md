@@ -21,3 +21,6 @@ npx create-expo-app@latest meu-app
 cd meu-app
 npx expo start
 ```
+
+Executar no celular / emulador
+Download do Expo GO no celular

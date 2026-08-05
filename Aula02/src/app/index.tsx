@@ -16,8 +16,11 @@ const tasks = [
 
 export default function TodoScreen() {
   return (
+    // area util da tela
     <SafeAreaView style={styles.safeArea}>
+      {/* permite scroll / rolar a tela */}
       <ScrollView contentContainerStyle={styles.container}>
+        {/* Header é um componente criado por nós */}
         <Header title="Minhas tarefas" subtitle={`${tasks.length} tarefas`} />
 
         <View style={styles.list}>
