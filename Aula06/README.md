@@ -223,16 +223,7 @@ de endereço só é reescrita na próxima navegação.
 
 ## Exercícios
 
-1. Trate o `401` nas telas de anotações e admin: quando o servidor responder
-   "não autenticado", chame `sair()` para o app voltar ao login sozinho.
-2. Adicione `carregando` ao contexto e mostre uma tela de espera enquanto o
-   login está em andamento (em vez de só desabilitar o botão).
-3. Crie uma rota `/anotacoes/[id]` com os detalhes de uma anotação. Ela deve
-   ficar dentro de `(app)` — por quê?
-4. Crie um papel `moderador` no servidor e uma rota que só ele e o admin
-   acessem. Quantos lugares precisaram mudar?
-5. Guarde o token com `AsyncStorage` para a sessão sobreviver ao reload
-   (assunto da aula de persistência — vale tentar antes).
-6. O `AuthProvider` recria as funções `entrar`, `cadastrar` e `sair` a cada
-   render. Investigue se isso é um problema neste projeto (dica: `reactCompiler`
-   em `app.json`).
+Os exercícios desta aula viraram o
+[Trabalho II](../Trabalhos/Trabalho%20II.md): sessão expirada (`401`),
+`carregando` no contexto, `/anotacoes/[id]`, papel `moderador`, sessão com
+`AsyncStorage` e análise do `AuthProvider`.
