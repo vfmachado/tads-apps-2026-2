@@ -367,20 +367,9 @@ Arquivos:
 Componentes novos: `SessaoAtual` (mostra o contexto ao vivo), `Campo`,
 `MensagemErro`, `AnotacaoItem`, `UsuarioItem`.
 
-Exercícios:
-
-1. Trate o `401` nas telas de anotações e admin: se o servidor responder "não
-   autenticado", chame `sair()` para o app voltar ao login sozinho.
-2. Adicione `carregando` ao contexto e mostre uma tela de espera durante o
-   login, em vez de só desabilitar o botão.
-3. Crie `/anotacoes/[id]` com os detalhes de uma anotação. Ela precisa ficar
-   dentro de `(app)` — por quê?
-4. Crie o papel `moderador` no servidor e uma rota que só ele e o admin
-   acessem. Liste os lugares que precisaram mudar.
-5. Guarde o token com `AsyncStorage` para a sessão sobreviver ao reload
-   (assunto da aula de persistência — vale tentar antes).
-6. O `AuthProvider` recria `entrar`, `cadastrar` e `sair` a cada render. Isso é
-   um problema neste projeto? (Dica: `reactCompiler` em `app.json`.)
+Exercícios: viraram o [Trabalho II](Trabalhos/Trabalho%20II.md) — sessão
+expirada (`401`), `carregando` no contexto, `/anotacoes/[id]`, papel
+`moderador`, sessão com `AsyncStorage` e análise do `AuthProvider`.
 
 **Para observar em aula**
 
@@ -400,7 +389,7 @@ Exercícios:
 * Alguém da turma se cadastra; o admin toca em *Atualizar* e vê a conta.
   Reiniciar o servidor; atualizar de novo: a conta sumiu.
 * Com o app logado, reiniciar o servidor e tocar em *Conferir token no
-  servidor*: `401`. O token morreu com o processo — gancho para o exercício 1.
+  servidor*: `401`. O token morreu com o processo — gancho para o requisito 4.1 do Trabalho II.
 * Recarregar a página do app: volta ao login. A sessão vive na memória do app —
   gancho para a aula de persistência.
 * Na web, abrir `/anotacoes` direto, sem login: a tela de login aparece e
